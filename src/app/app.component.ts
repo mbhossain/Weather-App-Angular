@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
 import { WeatherData } from './models/weather.model';
+import { WeatherData2 } from './models/weather.model2';
 import { WeatherService } from './services/weather.service';
 
 @Component({
@@ -14,7 +16,7 @@ export class AppComponent implements OnInit {
   }
 
   cityName: string = 'Dhaka';
-  weatherData?: WeatherData;
+  weatherData?: WeatherData2;
 
   ngOnInit(): void {
     this.getWeatherData(this.cityName);
